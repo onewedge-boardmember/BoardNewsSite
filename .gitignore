@@ -1,0 +1,11 @@
+# 議事録・下書きはパブリックリポジトリに含めない
+drafts/*
+!drafts/README.md
+!drafts/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
