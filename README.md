@@ -11,6 +11,10 @@
 
 **注意**: パブリックリポジトリのため、機密・個人名・未公開数字などは絶対にコミットしない。
 
+**運用ルール（詳細）**: [docs/operating-flow.md](./docs/operating-flow.md)  
+（AI プロンプト・公開前チェック: [docs/](./docs/)）  
+**記事公開**: チャットで `/publish-article`（`drafts/xxx.md` を引数で指定可）
+
 ---
 
 ## リポジトリ構成（A）
@@ -28,8 +32,9 @@ BoardNewsSite/
 │   ├── テンプレート.html   # 新規記事用（index には載せない）
 │   └── YYYY-MM-DD-slug.html
 ├── drafts/                 # 議事録原稿（.gitignore・ローカルのみ）
+├── docs/                   # 運用フロー・プロンプト・チェックリスト
 ├── .github/workflows/      # Pages 自動デプロイ
-└── README.md               # 本ファイル（運用フロー）
+└── README.md               # 概要（運用の詳細は docs/）
 ```
 
 | パス | 役割 | Git |
@@ -41,62 +46,15 @@ BoardNewsSite/
 
 ---
 
-## 運用フロー（A）
+## 運用フロー（概要）
 
-```mermaid
-flowchart LR
-  A[議事録・活動メモ] --> B[drafts/ に保存]
-  B --> C[AI で HTML 生成]
-  C --> D[公開前チェック]
-  D --> E[posts/ に追加]
-  E --> F[index.html 一覧更新]
-  F --> G[main に push]
-  G --> H[GitHub Pages 反映]
-```
+1. `drafts/` へ議事録を追加（Git に含めない）
+2. AI で公開用 HTML を生成（[docs/ai-prompt.md](./docs/ai-prompt.md)）
+3. `posts/` へ HTML を追加
+4. `index.html` の一覧を更新
+5. [公開前チェック](./docs/publication-checklist.md) → `git push`
 
-### 1. 原稿を書く
-
-`drafts/` に Markdown などで置く（テンプレは `drafts/README.md` 参照）。
-
-### 2. HTML を用意する
-
-- **手動**: `posts/テンプレート.html` をコピーし、`YYYY-MM-DD-slug.html` にリネームして【】を置換
-- **AI**: 下記プロンプトで生成（`posts/2025-05-14-kickoff.html` または `テンプレート.html` を参照指定）
-
-プロンプト例:
-
-```
-以下の議事録から、GitHub Pages 公開用の HTML を生成してください。
-- 既存サイトのデザインに合わせる（posts/2025-05-14-kickoff.html を参考）
-- ファイル名: posts/YYYY-MM-DD-slug.html
-- 個人名・未公開数値・内部批判は含めない
-- 箇条書きで要点を短く
-
-【議事録】
-（ここに drafts の内容を貼る）
-```
-
-生成後、`index.html` の `<ul class="post-list">` にカードを 1 件追加する。
-
-**header / footer の編集**: 各 HTML ではなく `partials/header.html`・`partials/footer.html` を直す（全ページに反映）。記事ページは `<body data-base="..">` と `layout.js` をテンプレートどおりに含めること。
-
-### 3. 公開前チェックリスト
-
-- [ ] 個人の氏名・連絡先がない
-- [ ] 未発表の数字・契約・人事がない
-- [ ] 他部署・他拠点への批判・比較がない
-- [ ] 「本音」「社内政治」など表に出さない意図の記述がない
-- [ ] `drafts/` のファイルが誤って `git add` されていない（`git status` で確認）
-
-### 4. 公開
-
-```bash
-git add posts/ index.html   # drafts は add しない
-git commit -m "Add activity report: YYYY-MM-DD"
-git push origin main
-```
-
-`main` への push で GitHub Actions が Pages にデプロイします。
+詳細は **[docs/operating-flow.md](./docs/operating-flow.md)** を参照。
 
 ---
 
