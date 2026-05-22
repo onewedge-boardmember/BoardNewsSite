@@ -96,13 +96,16 @@ a:hover {
   gap: 0.5rem;
 }
 
-.site-logo::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-bright), var(--accent));
-  box-shadow: 0 0 12px var(--accent-ring);
+.site-logo__mark {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px var(--accent-ring);
+}
+
+.site-logo__text {
+  line-height: 1.2;
 }
 
 .site-logo:hover {
@@ -133,8 +136,12 @@ main {
 }
 
 .hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
   text-align: center;
-  padding: 2.5rem 1.5rem 3rem;
+  padding: 2rem 1.5rem 2.5rem;
   margin-bottom: 0.5rem;
   border-radius: var(--radius);
   background: var(--glass);
@@ -142,6 +149,43 @@ main {
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--glass-border);
   box-shadow: var(--shadow);
+}
+
+@media (min-width: 720px) {
+  .hero {
+    grid-template-columns: 1.1fr 0.9fr;
+    text-align: left;
+    padding: 2rem 2rem 2.25rem;
+  }
+
+  .hero__content {
+    order: 1;
+  }
+
+  .hero__visual {
+    order: 2;
+  }
+
+  .hero p {
+    margin-left: 0;
+  }
+}
+
+.hero__visual {
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.hero__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  filter: drop-shadow(0 8px 24px rgba(14, 116, 144, 0.12));
+}
+
+.hero__content {
+  min-width: 0;
 }
 
 .hero__label {
@@ -197,8 +241,11 @@ main {
 }
 
 .post-card {
-  display: block;
-  padding: 1.5rem 1.65rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
   background: var(--glass);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -221,6 +268,31 @@ main {
   color: var(--accent);
 }
 
+@media (min-width: 560px) {
+  .post-card {
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+.post-card__thumb {
+  position: relative;
+  min-height: 120px;
+  background: linear-gradient(135deg, var(--bg-accent), #f0f9ff);
+  overflow: hidden;
+}
+
+.post-card__thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  object-fit: cover;
+}
+
+.post-card__body {
+  padding: 1.35rem 1.5rem 1.5rem;
+}
+
 .post-card__meta {
   font-size: 0.82rem;
   color: var(--text-muted);
@@ -229,15 +301,29 @@ main {
 }
 
 .tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   margin-right: 0.5rem;
-  padding: 0.2rem 0.55rem;
+  padding: 0.2rem 0.55rem 0.2rem 0.4rem;
   background: var(--accent-soft);
   color: var(--accent);
   border-radius: 6px;
   font-weight: 700;
   font-size: 0.75rem;
   border: 1px solid rgba(6, 182, 212, 0.15);
+}
+
+.tag::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  background: center / contain no-repeat url("../images/icons/tag-meeting.svg");
+}
+
+.tag--members::before {
+  background-image: url("../images/icons/tag-members.svg");
 }
 
 .post-card h2 {
@@ -302,10 +388,64 @@ main {
   box-shadow: var(--shadow);
 }
 
+.article__cover {
+  margin: -0.5rem -0.25rem 1.75rem;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(6, 182, 212, 0.15);
+  box-shadow: var(--shadow);
+}
+
+.article__cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 2;
+  object-fit: cover;
+}
+
 .article header {
   margin-bottom: 2rem;
   padding-bottom: 1.75rem;
   border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.article-figure {
+  margin: 1.25rem 0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  background: var(--highlight-bg);
+}
+
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-figure figcaption {
+  padding: 0.65rem 1rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.member-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.member-list li::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--accent-soft) url("../images/icons/tag-members.svg") center / 14px no-repeat;
+  border: 1px solid rgba(6, 182, 212, 0.2);
 }
 
 .article__meta {
@@ -434,7 +574,15 @@ main {
   margin: 0;
   padding: 0.75rem 1rem;
   border-radius: 999px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   background: var(--glass);
   border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.site-footer__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.85;
 }

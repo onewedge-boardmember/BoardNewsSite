@@ -29,7 +29,8 @@
 - パブリック公開用。個人名・未公開数値・内部批判・社内政治は載せない
 - トーン: 透明・前向き・簡潔。キャッチーで読みやすく
 - 既存デザインに合わせる: posts/テンプレート.html の構造を使う
-- header / footer は書かない（<div id="site-header"> と site-footer、data-base=".."、layout.js のみ）
+- 画像: article__cover（covers/）、index 用 post-card__thumb（cards/）。タグ「メンバー」は class="tag tag--members"
+- header / footer は書かない（<div id="site-header"> と site-footer、data-base=".."、site-config.js + layout.js のみ）
 - ファイル名案: posts/【YYYY-MM-DD-slug】.html
 - index.html 用の post-card ブロックも出力する
 

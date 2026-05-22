@@ -40,7 +40,8 @@ Board Activity News の定例フローに従い、**1本の記事を公開可能
 - パブリック公開用。不要な個人名・未公開数値・内部批判・社内政治は載せない
 - トーン: 透明・前向き・簡潔
 - header / footer は HTML に書かない  
-  → `<div id="site-header"></div>` / `<div id="site-footer"></div>` / `<body data-base="..">` / `../assets/js/layout.js` のみ
+  → `<div id="site-header"></div>` / `<div id="site-footer"></div>` / `<body data-base="..">` / `site-config.js` + `layout.js`
+- 画像: `article__cover`（`assets/images/covers/YYYY-MM-DD-slug.svg`）、index カードに `post-card__thumb`（`assets/images/cards/`）
 - 出力先: `posts/YYYY-MM-DD-slug.html`（slug は英小文字・ハイフン）
 
 ### 2. `posts/` に HTML を書き込む

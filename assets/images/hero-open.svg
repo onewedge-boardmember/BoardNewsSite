@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none" aria-hidden="true">
+  <ellipse cx="240" cy="280" rx="200" ry="24" fill="#0891b2" opacity=".08"/>
+  <rect x="80" y="48" width="320" height="200" rx="20" fill="rgba(255,255,255,.85)" stroke="rgba(6,182,212,.25)" stroke-width="2"/>
+  <rect x="100" y="72" width="120" height="12" rx="6" fill="#06b6d4" opacity=".7"/>
+  <rect x="100" y="96" width="200" height="10" rx="5" fill="#cbd5e1"/>
+  <rect x="100" y="118" width="180" height="10" rx="5" fill="#e2e8f0"/>
+  <rect x="100" y="148" width="88" height="72" rx="12" fill="#e0f2fe" stroke="#06b6d4" stroke-width="1.5"/>
+  <rect x="204" y="148" width="88" height="72" rx="12" fill="#cffafe" stroke="#0891b2" stroke-width="1.5"/>
+  <rect x="308" y="148" width="72" height="72" rx="12" fill="#f0f9ff" stroke="#67e8f9" stroke-width="1.5"/>
+  <circle cx="144" cy="184" r="16" fill="#06b6d4" opacity=".35"/>
+  <circle cx="248" cy="184" r="16" fill="#0891b2" opacity=".35"/>
+  <path d="M100 240h280" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="380" cy="88" r="36" fill="url(#hv)" opacity=".95"/>
+  <path d="M368 88l8 8 16-20" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="72" cy="200" r="28" fill="#a5f3fc" opacity=".5"/>
+  <circle cx="408" cy="220" r="20" fill="#bae6fd" opacity=".6"/>
+  <defs>
+    <linearGradient id="hv" x1="344" y1="52" x2="416" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+  </defs>
+</svg>

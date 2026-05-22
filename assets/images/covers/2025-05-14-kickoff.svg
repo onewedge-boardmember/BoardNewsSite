@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" fill="none" aria-hidden="true">
+  <rect width="800" height="320" fill="url(#c2)"/>
+  <path d="M400 80l48 96h-96l48-96z" fill="#0891b2" opacity=".25"/>
+  <text x="80" y="120" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#0e7490">­Ã¯ªÕ</text>
+  <text x="80" y="168" font-family="system-ui,sans-serif" font-size="20" fill="#64748b">,1Þš‹MTG  ãháÃ»ü¸h×ì¼ó</text>
+  <rect x="80" y="200" width="200" height="10" rx="5" fill="#06b6d4"/>
+  <circle cx="640" cy="160" r="80" fill="#22d3ee" opacity=".15"/>
+  <defs>
+    <linearGradient id="c2" x1="0" y1="0" x2="800" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f0f9ff"/>
+      <stop offset="1" stop-color="#e0f2fe"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -12,6 +12,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="【検索・SNS用の要約（80字程度）】">
+  <meta property="og:title" content="【記事タイトル】">
+  <meta property="og:description" content="【検索・SNS用の要約（80字程度）】">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="../assets/images/covers/【YYYY-MM-DD-slug】.svg">
   <title>【記事タイトル】 | Board Activity News</title>
   <link rel="stylesheet" href="../assets/css/site.css">
 </head>
@@ -22,9 +26,14 @@
     <a class="article__back" href="../">← 活動一覧へ</a>
 
     <article class="article">
+      <!-- カバー: assets/images/covers/ に SVG または .jpg/.webp を置く -->
+      <figure class="article__cover">
+        <img src="../assets/images/covers/【YYYY-MM-DD-slug】.svg" alt="【画像の説明（公開可）】" width="800" height="320" decoding="async">
+      </figure>
+
       <header>
         <p class="article__meta">
-          <!-- タグ例: 会議 / メンバー / 訪問 / 調査 -->
+          <!-- タグ例: 会議 / メンバー(tag--members) / 訪問 / 調査 -->
           <span class="tag">【タグ】</span>
           <time datetime="YYYY-MM-DD">【YYYY年M月D日】</time>
         </p>
@@ -53,6 +62,13 @@
         <p>
           【本文。個人名・未公開数字・内部批判は載せない】
         </p>
+        <!-- 写真がある場合（公開可のみ） -->
+        <!--
+        <figure class="article-figure">
+          <img src="../assets/images/posts/【slug】/photo-1.webp" alt="【写真の説明】" width="800" loading="lazy" decoding="async">
+          <figcaption>【キャプション（任意）】</figcaption>
+        </figure>
+        -->
       </section>
 
       <!-- セクション3：リストのみ（不要なら <section> ごと削除） -->
@@ -88,6 +104,30 @@
   </main>
 
   <div id="site-footer"></div>
+  <script src="../assets/js/site-config.js"></script>
   <script src="../assets/js/layout.js"></script>
+
+<!--
+  index.html 用カード例（サムネイル付き）:
+
+  <li>
+    <a class="post-card" href="posts/YYYY-MM-DD-slug.html">
+      <div class="post-card__thumb">
+        <img src="assets/images/cards/meeting.svg" alt="" width="240" height="160" loading="lazy" decoding="async">
+      </div>
+      <div class="post-card__body">
+        <div class="post-card__meta">
+          <span class="tag">【タグ】</span>
+          <time datetime="YYYY-MM-DD">【日付】</time>
+        </div>
+        <h2>【タイトル】</h2>
+        <p>【要約】</p>
+        <span class="post-card__arrow" aria-hidden="true">読む →</span>
+      </div>
+    </a>
+  </li>
+
+  カード画像: assets/images/cards/ （meeting / kickoff / members ほか追加可）
+-->
 </body>
 </html>

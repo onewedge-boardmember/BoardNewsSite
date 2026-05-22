@@ -27,7 +27,10 @@ BoardNewsSite/
 │   └── footer.html
 ├── assets/
 │   ├── css/site.css        # 共通スタイル
-│   └── js/layout.js        # partials 読み込み
+│   ├── images/             # favicon・ロゴ・カード/カバー画像（README あり）
+│   └── js/
+│       ├── layout.js       # partials 読み込み
+│       └── site-config.js  # OG 用の公開 URL（任意）
 ├── posts/                  # 公開記事（HTML のみ）
 │   ├── テンプレート.html   # 新規記事用（index には載せない）
 │   └── YYYY-MM-DD-slug.html
@@ -91,8 +94,14 @@ python3 -m http.server 8080
 
 ---
 
+## 画像・ブランディング
+
+- favicon / ロゴ / カード・カバー用 SVG は `assets/images/` に配置済み
+- 実写写真は `assets/images/posts/【slug】/` に置き、記事から参照（[assets/images/README.md](./assets/images/README.md)）
+- SNS プレビュー: `assets/js/site-config.js` の `origin` に GitHub Pages の URL を設定
+
 ## 未決・次の検討（任意）
 
-- サイト正式名称・ロゴ
+- サイト正式名称・ロゴ（写真版への差し替え）
 - カテゴリ（会議 / 訪問 / 調査）の増減
 - Notion / Slack PDF との見出し対応表
