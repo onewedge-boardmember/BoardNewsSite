@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+  新規記事の作り方
+  1. このファイルをコピー → posts/YYYY-MM-DD-slug.html にリネーム
+  2. 下の 【】プレースホルダをすべて置き換え
+  3. 公開前チェック（README 参照）→ index.html の post-list にカードを1件追加
+  ※ 本ファイル（テンプレート.html）は index に載せない
+-->
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="【検索・SNS用の要約（80字程度）】">
+  <title>【記事タイトル】 | Board Activity News</title>
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="../">Board Activity News</a>
+      <nav class="site-nav" aria-label="メイン">
+        <a href="../">活動一覧</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article-wrap">
+    <a class="article__back" href="../">← 活動一覧へ</a>
+
+    <article class="article">
+      <header>
+        <p class="article__meta">
+          <!-- タグ例: 会議 / メンバー / 訪問 / 調査 -->
+          <span class="tag">【タグ】</span>
+          <time datetime="YYYY-MM-DD">【YYYY年M月D日】</time>
+        </p>
+        <h1>【記事タイトル】</h1>
+        <p class="article__lead">
+          【リード文：1〜2文で記事の要点。公開してよい範囲のみ】
+        </p>
+      </header>
+
+      <!-- セクション1：ハイライト（箇条書き向け） -->
+      <section>
+        <h2>【見出し1】</h2>
+        <div class="highlight-box">
+          <strong>ハイライト</strong>
+          <ul>
+            <li>【要点1】</li>
+            <li>【要点2】</li>
+            <li>【要点3】</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- セクション2：本文（段落） -->
+      <section>
+        <h2>【見出し2】</h2>
+        <p>
+          【本文。個人名・未公開数字・内部批判は載せない】
+        </p>
+      </section>
+
+      <!-- セクション3：リストのみ（不要なら <section> ごと削除） -->
+      <section>
+        <h2>【見出し3】</h2>
+        <ul>
+          <li>【項目1】</li>
+          <li>【項目2】</li>
+        </ul>
+      </section>
+
+      <!-- メンバー一覧向け（不要なら削除。members 記事を参考に） -->
+      <!--
+      <section>
+        <h2>【見出し】</h2>
+        <div class="highlight-box">
+          <strong>【ボックス見出し】</strong>
+          <ul class="member-list">
+            <li>【氏名】</li>
+          </ul>
+        </div>
+      </section>
+      -->
+
+      <!-- 締め（任意） -->
+      <section>
+        <h2>このあと</h2>
+        <p>
+          【今後の予定・次のアクション（公開可の範囲）】
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Board Activity News — 公開用活動報告</p>
+  </footer>
+</body>
+</html>
