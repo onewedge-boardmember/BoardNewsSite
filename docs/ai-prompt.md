@@ -35,7 +35,7 @@
 - index.html 用の post-card ブロックも出力する
 
 ## 参考記事
-（必要なら posts/2025-05-14-kickoff.html などを貼る or @指定）
+（必要なら posts/2026-05-14-kickoff.html などを貼る or @指定）
 
 ## 議事録
 ---

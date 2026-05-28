@@ -7,7 +7,7 @@ Board Activity News の記事を 1 本公開するときの手順です。
 チャットで **`/publish-article`** を実行すると、本ドキュメントに沿って AI が手順を進めます。
 
 - 定義: `.cursor/commands/publish-article.md`
-- 例: `/publish-article drafts/2025-05-21-meeting_2.md`（議事録パスを引数で渡せる）
+- 例: `/publish-article drafts/2026-05-21-meeting_2.md`（議事録パスを引数で渡せる）
 
 ## 全体の流れ（合意版）
 
@@ -39,7 +39,7 @@ index.html の一覧を更新
 
 ### 1. `drafts/` へ議事録を追加
 
-- ファイル名の例: `2025-05-21-meeting_2.md`
+- ファイル名の例: `2026-05-21-meeting_2.md`
 - テンプレ: `drafts/README.md`
 - **議事録の全文・社内限定の数字や発言はここだけ**に置く
 - `drafts/*` は `.gitignore` 済み（パブリックリポジトリに載らない）
@@ -51,13 +51,13 @@ index.html の一覧を更新
 - **ルール・プロンプト**: [ai-prompt.md](./ai-prompt.md)（設計・改善はここで管理）
 - 参照デザイン:
   - 骨組み: `posts/テンプレート.html`
-  - 記事例: `posts/2025-05-14-kickoff.html` など
+  - 記事例: `posts/2026-05-14-kickoff.html` など
 - **header / footer は各 HTML に書かない**  
   → `partials/header.html`・`partials/footer.html` を `layout.js` が読み込む（`<body data-base="..">` 必須）
 
 ### 3. `posts/` へ HTML を追加
 
-- ファイル名: `YYYY-MM-DD-slug.html`（例: `2025-05-21-boardnews.html`）
+- ファイル名: `YYYY-MM-DD-slug.html`（例: `2026-05-21-boardnews.html`）
 - `posts/テンプレート.html` は index に載せない（コピー元のみ）
 
 ### 4. `index.html` を修正

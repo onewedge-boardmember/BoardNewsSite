@@ -16,7 +16,7 @@
 
 ## 写真を足すとき
 
-1. `assets/images/posts/2025-05-21-boradnews/` など slug ごとにフォルダを作成
+1. `assets/images/posts/2026-05-21-boradnews/` など slug ごとにフォルダを作成
 2. WebP または JPEG を置く（幅 1200px 程度にリサイズ推奨）
 3. 記事 HTML で `<figure class="article-figure">` を使う（テンプレート参照）
 

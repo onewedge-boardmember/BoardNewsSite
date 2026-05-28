@@ -32,7 +32,7 @@ Board Activity News の定例フローに従い、**1本の記事を公開可能
 必ず読むファイル:
 
 - `posts/テンプレート.html`（骨組み）
-- `posts/2025-05-14-kickoff.html` または直近の記事（文体・長さの参考）
+- `posts/2026-05-14-kickoff.html` または直近の記事（文体・長さの参考）
 - `docs/ai-prompt.md`（ルール）
 
 **厳守ルール**
