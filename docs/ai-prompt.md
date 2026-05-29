@@ -29,7 +29,9 @@
 - パブリック公開用。個人名・未公開数値・内部批判・社内政治は載せない
 - トーン: 透明・前向き・簡潔。キャッチーで読みやすく
 - 既存デザインに合わせる: posts/テンプレート.html の構造を使う
-- 画像: article__cover（covers/）、index 用 post-card__thumb（cards/）。タグ「メンバー」は class="tag tag--members"
+- 画像:
+  - **カバー（必須・記事ごとに固有）**: `assets/images/covers/YYYY-MM-DD-slug.svg` を新規作成。配色・装飾図形・テキストを他記事と被らないよう変える。日本語は XML 数値参照（&#...;）推奨
+  - index の post-card__thumb も同じ `covers/YYYY-MM-DD-slug.svg`（cards/ の共通画像は使わない）。タグ「メンバー」は class="tag tag--members"
 - header / footer は書かない（<div id="site-header"> と site-footer、data-base=".."、site-config.js + layout.js のみ）
 - ファイル名案: posts/【YYYY-MM-DD-slug】.html
 - index.html 用の post-card ブロックも出力する
@@ -43,9 +45,10 @@
 ---
 
 ## 出力形式
-1. posts/ の完全な HTML
-2. index.html に追加する <li> ブロック
-3. 公開前に人間が確認すべき点（あれば）
+1. `assets/images/covers/YYYY-MM-DD-slug.svg`（カバー SVG の全文）
+2. posts/ の完全な HTML
+3. index.html に追加する <li> ブロック
+4. 公開前に人間が確認すべき点（あれば）
 ```
 
 ---

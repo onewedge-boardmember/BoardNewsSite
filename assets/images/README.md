@@ -10,7 +10,7 @@
 | `og-default.svg` | SNS シェア用（デフォルト） |
 | `hero-open.svg` | トップのヒーロー |
 | `cards/` | 一覧カードのサムネイル |
-| `covers/` | 記事ヘッダー（カバー） |
+| `covers/` | 記事ヘッダー（カバー）— **記事ごとに 1 枚必須**。命名・作成手順は [covers/README.md](./covers/README.md) |
 | `icons/` | タグ横の小アイコン |
 | `posts/【slug】/` | 記事本文用の写真（任意・公開可のみ） |
 

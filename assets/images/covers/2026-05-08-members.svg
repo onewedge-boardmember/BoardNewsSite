@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" fill="none" aria-hidden="true">
-  <rect width="800" height="320" fill="url(#c3)"/>
-  <circle cx="200" cy="140" r="36" fill="#06b6d4" opacity=".3"/>
-  <circle cx="280" cy="120" r="44" fill="#0891b2" opacity=".35"/>
-  <circle cx="360" cy="140" r="36" fill="#22d3ee" opacity=".3"/>
-  <text x="80" y="220" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#0e7490">Board Members zš</text>
-  <text x="80" y="260" font-family="system-ui,sans-serif" font-size="18" fill="#64748b">8g¹¿üÈ</text>
   <defs>
-    <linearGradient id="c3" x1="0" y1="0" x2="800" y2="320" gradientUnits="userSpaceOnUse">
+    <linearGradient id="g" x1="0" y1="0" x2="800" y2="320" gradientUnits="userSpaceOnUse">
       <stop stop-color="#cffafe"/>
       <stop offset="1" stop-color="#e0f2fe"/>
     </linearGradient>
   </defs>
+  <rect width="800" height="320" fill="url(#g)"/>
+  <circle cx="200" cy="140" r="36" fill="#06b6d4" opacity=".3"/>
+  <circle cx="280" cy="120" r="44" fill="#0891b2" opacity=".35"/>
+  <circle cx="360" cy="140" r="36" fill="#22d3ee" opacity=".3"/>
+  <text x="80" y="220" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#0e7490">Board Members &#27770;&#23450;</text>
+  <text x="80" y="260" font-family="system-ui,sans-serif" font-size="18" fill="#64748b">8&#21517;&#12391;&#12473;&#12479;&#12540;&#12488;</text>
 </svg>

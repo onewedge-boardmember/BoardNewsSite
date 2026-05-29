@@ -86,7 +86,7 @@ index.html の一覧を更新
 
 ```bash
 git status   # drafts/ が含まれていないこと
-git add posts/ index.html
+git add posts/ assets/images/covers/ index.html
 git commit -m "update: 【記事タイトル】を追加"
 git push origin main
 ```

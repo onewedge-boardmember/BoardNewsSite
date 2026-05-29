@@ -13,6 +13,9 @@
 ## ファイル・技術
 
 - [ ] ファイル名が `YYYY-MM-DD-slug.html` になっている
+- [ ] **カバー SVG** `assets/images/covers/YYYY-MM-DD-slug.svg` があり、記事の `og:image` / `article__cover` と **index のサムネ** が同じパスを指している（`cards/*.svg` の流用なし）
+- [ ] 他記事とカバーの見た目が十分に異なる（配色・図形・テキスト）
+- [ ] カバー SVG が `xmllint --noout` でエラーにならない（日本語の文字化けで invalid になっていない）
 - [ ] 記事ページに `<body data-base="..">` と `layout.js` がある
 - [ ] `index.html` にカードが 1 件追加され、リンク先が正しい
 - [ ] `meta description` と `title` を記事用に更新した

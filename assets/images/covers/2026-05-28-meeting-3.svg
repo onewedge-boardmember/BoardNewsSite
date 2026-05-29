@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="800" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ede9fe"/>
+      <stop offset="1" stop-color="#cffafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="320" fill="url(#g)"/>
+  <rect x="520" y="72" width="72" height="176" rx="12" fill="#8b5cf6" opacity=".25"/>
+  <rect x="608" y="96" width="72" height="152" rx="12" fill="#06b6d4" opacity=".3"/>
+  <rect x="696" y="120" width="72" height="128" rx="12" fill="#0891b2" opacity=".35"/>
+  <text x="536" y="268" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#7c3aed">A</text>
+  <text x="624" y="268" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#0e7490">B</text>
+  <text x="712" y="268" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#0369a1">C</text>
+  <rect x="48" y="48" width="440" height="224" rx="20" fill="rgba(255,255,255,.78)" stroke="rgba(139,92,246,.35)" stroke-width="2"/>
+  <text x="80" y="120" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#6d28d9">&#31532;3&#22238;&#23450;&#20363;MTG</text>
+  <text x="80" y="168" font-family="system-ui,sans-serif" font-size="20" fill="#64748b">&#26609;&#21029;&#12398;&#36899;&#25658;</text>
+  <rect x="80" y="200" width="120" height="10" rx="5" fill="#8b5cf6" opacity=".6"/>
+  <rect x="220" y="200" width="120" height="10" rx="5" fill="#06b6d4" opacity=".5"/>
+  <rect x="360" y="200" width="120" height="10" rx="5" fill="#0891b2" opacity=".4"/>
+</svg>

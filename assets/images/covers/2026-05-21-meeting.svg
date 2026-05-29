@@ -1,16 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" fill="none" aria-hidden="true">
-  <rect width="800" height="320" fill="url(#c1)"/>
-  <rect x="48" y="48" width="704" height="224" rx="20" fill="rgba(255,255,255,.75)" stroke="rgba(255,255,255,.9)" stroke-width="2"/>
-  <text x="80" y="120" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#0891b2">,2Þš‹MTG</text>
-  <text x="80" y="168" font-family="system-ui,sans-serif" font-size="20" fill="#64748b">;Õzán¹Ý’zš</text>
-  <rect x="80" y="200" width="160" height="10" rx="5" fill="#06b6d4" opacity=".6"/>
-  <rect x="260" y="200" width="120" height="10" rx="5" fill="#0891b2" opacity=".3"/>
-  <circle cx="680" cy="100" r="48" fill="#06b6d4" opacity=".2"/>
-  <circle cx="720" cy="220" r="32" fill="#22d3ee" opacity=".25"/>
   <defs>
-    <linearGradient id="c1" x1="0" y1="0" x2="800" y2="320" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#e0f2fe"/>
-      <stop offset="1" stop-color="#cffafe"/>
+    <linearGradient id="g" x1="0" y1="0" x2="800" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#e0f2fe"/>
     </linearGradient>
   </defs>
+  <rect width="800" height="320" fill="url(#g)"/>
+  <path d="M560 80c40 0 72 32 72 72s-32 72-72 72" stroke="#f59e0b" stroke-width="12" stroke-linecap="round" opacity=".35"/>
+  <path d="M600 80c24 0 44 20 44 44s-20 44-44 44" stroke="#fb923c" stroke-width="10" stroke-linecap="round" opacity=".45"/>
+  <path d="M632 80c8 0 16 8 16 16s-8 16-16 16" stroke="#f97316" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+  <rect x="48" y="56" width="420" height="200" rx="20" fill="rgba(255,255,255,.82)" stroke="rgba(251,191,36,.5)" stroke-width="2"/>
+  <text x="80" y="132" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#c2410c">&#31532;2&#22238;&#23450;&#20363;MTG</text>
+  <text x="80" y="180" font-family="system-ui,sans-serif" font-size="20" fill="#64748b">&#27963;&#21205;&#30330;&#20449;&#12398;&#26041;&#37341;</text>
+  <rect x="80" y="210" width="140" height="10" rx="5" fill="#f59e0b" opacity=".7"/>
+  <rect x="240" y="210" width="100" height="10" rx="5" fill="#0891b2" opacity=".35"/>
 </svg>

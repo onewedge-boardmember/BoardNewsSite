@@ -277,6 +277,8 @@ main {
 .post-card__thumb {
   position: relative;
   min-height: 120px;
+  height: 120px;
+  align-self: center;
   background: linear-gradient(135deg, var(--bg-accent), #f0f9ff);
   overflow: hidden;
 }
@@ -285,8 +287,9 @@ main {
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 120px;
   object-fit: cover;
+  /* 横長カバー(800×320)を細いサムネに収めるとき、中央寄せだと左のタイトルが切れる */
+  object-position: left center;
 }
 
 .post-card__body {
