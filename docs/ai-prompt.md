@@ -76,7 +76,7 @@
 ## 要検討（TODO）
 
 - [x] Cursor スラッシュコマンド `/publish-article`（`.cursor/commands/publish-article.md`）
-- [ ] プロンプトを Cursor Rule / Skill に固定するか
+- [x] Skill `.cursor/skills/publish-article/SKILL.md`
 - [ ] 議事録の必須見出し（日付・議題・決定・次回）を drafts テンプレに統一するか
 - [ ] 社内 PDF 用と Web 用で AI を二段階にするか
 - [ ] 自動で index まで更新するスクリプトの要否
