@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="g7" x1="0" y1="0" x2="800" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f5f3ff"/>
+      <stop offset="1" stop-color="#ddd6fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="320" fill="url(#g7)"/>
+  <rect x="536" y="212" width="44" height="60" rx="8" fill="#c4b5fd" opacity=".8"/>
+  <rect x="592" y="180" width="44" height="92" rx="8" fill="#a78bfa" opacity=".8"/>
+  <rect x="648" y="140" width="44" height="132" rx="8" fill="#8b5cf6" opacity=".82"/>
+  <rect x="704" y="96" width="44" height="176" rx="8" fill="#7c3aed" opacity=".82"/>
+  <path d="M552 196 L610 164 L666 124 L722 80" stroke="#a78bfa" stroke-width="3" stroke-dasharray="7 6" opacity=".6"/>
+  <circle cx="558" cy="196" r="7" fill="#7c3aed"/>
+  <circle cx="614" cy="164" r="7" fill="#6d28d9"/>
+  <circle cx="670" cy="124" r="7" fill="#5b21b6"/>
+  <circle cx="726" cy="80" r="7" fill="#5b21b6"/>
+  <rect x="48" y="48" width="440" height="224" rx="20" fill="rgba(255,255,255,.82)" stroke="rgba(124,58,237,.35)" stroke-width="2"/>
+  <text x="80" y="120" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#6d28d9">&#31532;7&#22238;&#23450;&#20363;MTG</text>
+  <text x="80" y="168" font-family="system-ui,sans-serif" font-size="20" fill="#64748b">&#25968;&#23383;&#31649;&#29702;&#12392;&#36939;&#29992;&#35373;&#35336;</text>
+  <rect x="80" y="200" width="160" height="10" rx="5" fill="#7c3aed" opacity=".65"/>
+  <rect x="260" y="200" width="120" height="10" rx="5" fill="#8b5cf6" opacity=".5"/>
+  <rect x="400" y="200" width="80" height="10" rx="5" fill="#c4b5fd" opacity=".7"/>
+</svg>

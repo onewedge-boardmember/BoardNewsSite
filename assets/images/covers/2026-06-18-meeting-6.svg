@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="g6" x1="0" y1="0" x2="800" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#bfdbfe"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="320" fill="url(#g6)"/>
+  <path d="M560 96 L656 138" stroke="#3b82f6" stroke-width="3" opacity=".45"/>
+  <path d="M656 138 L596 198" stroke="#2563eb" stroke-width="3" opacity=".45"/>
+  <path d="M596 198 L700 240" stroke="#1d4ed8" stroke-width="3" opacity=".45"/>
+  <path d="M656 138 L724 96" stroke="#60a5fa" stroke-width="3" opacity=".4"/>
+  <circle cx="560" cy="96" r="14" fill="#93c5fd" opacity=".9"/>
+  <circle cx="656" cy="138" r="18" fill="#3b82f6" opacity=".85"/>
+  <circle cx="596" cy="198" r="13" fill="#2563eb" opacity=".8"/>
+  <circle cx="700" cy="240" r="15" fill="#1d4ed8" opacity=".8"/>
+  <circle cx="724" cy="96" r="10" fill="#60a5fa" opacity=".8"/>
+  <path d="M520 252 Q580 206 630 250 T742 246" stroke="#93c5fd" stroke-width="3" stroke-dasharray="7 6" opacity=".5"/>
+  <rect x="48" y="48" width="440" height="224" rx="20" fill="rgba(255,255,255,.82)" stroke="rgba(37,99,235,.35)" stroke-width="2"/>
+  <text x="80" y="120" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#1d4ed8">&#31532;6&#22238;&#23450;&#20363;MTG</text>
+  <text x="80" y="168" font-family="system-ui,sans-serif" font-size="20" fill="#64748b">&#21942;&#26989;&#12501;&#12525;&#12540;&#25972;&#20633;</text>
+  <rect x="80" y="200" width="160" height="10" rx="5" fill="#2563eb" opacity=".65"/>
+  <rect x="260" y="200" width="120" height="10" rx="5" fill="#3b82f6" opacity=".5"/>
+  <rect x="400" y="200" width="80" height="10" rx="5" fill="#93c5fd" opacity=".7"/>
+</svg>
